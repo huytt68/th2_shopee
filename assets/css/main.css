@@ -1,0 +1,131 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#ff6633, #f53d2d)
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.header__navbar-item {
+    position: relative;
+    margin: 0 8px;
+    min-height: 26px;
+}
+
+.header__navbar-title--no-click {
+    cursor: text;
+    color: var(--white-color);
+}
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.header__navbar-icon-link:hover {
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item--separator::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background-color: #FB9086;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-item--strong {
+    font-weight: 400;
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.header__navbar-icon {
+    font-size: 1.6rem;
+    margin: 0 4px;
+}
+
+.header__navbar-icon-brand {
+    font-size: 2rem;
+    margin: 0 4px;
+}
+
+/* Header QR Code */
+.header__navbar-item-have-qr:hover .header__qr {
+    display: block;
+}
+
+.header__qr {
+    background-color: var(--white-color);
+    width: 160px;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 4px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.1s;
+}
+
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    content: "";
+    left: 0;
+    top: -14px;
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-stores {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-stores-link:nth-child(1) {
+    margin-left: 10px;
+}
+.header__qr-stores-link:nth-child(2) {
+    margin-right: 10px;
+}
+
+.header__qr-stores-img {
+    height: 14px;
+}
+
+/* Container */
+.container {
+    background-color: #000;
+    height: 500px;
+}
