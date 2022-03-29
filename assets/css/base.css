@@ -4,6 +4,10 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+
+    --header-height: 110px;
+    --navbar-height: 32px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -42,6 +46,15 @@ html {
     }
 }
 
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
 /* Modal */
 .modal {
     position: fixed;
@@ -50,7 +63,7 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    
+    animation: fadeIn linear 0.05s;
 }
 
 .modal__overlay {
@@ -61,8 +74,11 @@ html {
 }
 
 .modal__body {
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin: auto;
     z-index: 1;
+    animation: growth linear 0.05s;
     /* border-radius: 5px; */
 }
 
@@ -71,10 +87,11 @@ html {
     min-width: 142px;
     height: 34px;
     text-decoration: none;
-    font-weight: 500px;
+    font-weight: 400;
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
+    line-height: 1.7rem;
     padding: 0 12px;
     outline: none;
     cursor: pointer;
@@ -91,7 +108,8 @@ html {
 
 .btn.btn--size-s {
     height: 32px;
-    font-size: 12px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
     padding: 0 8px;
 }
 
