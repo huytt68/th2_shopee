@@ -37,11 +37,16 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: -6px;
+    margin-right: -6px;
 }
 
 /* Test */
+.grid__column-full {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+}
 
 .grid__column-2 {
     padding-left: 6px;
@@ -188,6 +193,7 @@ html {
     padding: 10px 16px;
     list-style: none;
     display: none;
+    z-index: 1;
 }
 .select-input__list::after {
     content: "";
@@ -217,4 +223,135 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item {
+    list-style: none;
+    margin: 0 12px;
+}
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.pagination-item__icon {
+
+}
+
+
+/* Footer */
+
+.footer_begin {
+    margin: 30px 20px 20px 20px;
+}
+
+.footer__heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    padding: 0;
+}
+
+.footer-item {
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer_download-qr {
+    width: 84px;
+    height: 84px;
+    border: 0;
+}
+
+.footer__download-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer_download-app-img {
+    height: 30px;
+    margin-left: 12px;
+}
+
+.footer_end {
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0;
+}
+
+.footer__notice {
+    display: flex;
+    margin: 0 auto 40px;
+    justify-content: center;
+}
+
+.footer__notice-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer__tick {
+
+}
+
+.footer__tick-img {
+
+}
+
+.footer__company-info {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(102, 102, 102)
+}
+
+.footer-info-name {
+    display: block;
+    margin: 16px 0;
+}
+
+.footer-info {
+    display: block;
+    margin: 4px 0;
+
 }
