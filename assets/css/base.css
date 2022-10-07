@@ -261,6 +261,10 @@ html {
 
 
 /* Footer */
+.footer {
+    border-top: 4px solid var(--primary-color);
+    background-color: var(--white-color);
+}
 
 .footer_begin {
     margin: 30px 20px 20px 20px;
@@ -274,7 +278,8 @@ html {
 }
 
 .footer__list {
-    padding: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
 .footer-item {
@@ -287,7 +292,17 @@ html {
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--text-color);
+    padding: 2px 0;
+    display: block;
+}
 
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin-right: 8px;
 }
 
 .footer__download {
@@ -297,7 +312,7 @@ html {
 .footer_download-qr {
     width: 84px;
     height: 84px;
-    border: 0;
+    border: 1px solid var(--border-color);
 }
 
 .footer__download-apps {
@@ -307,13 +322,14 @@ html {
 }
 
 .footer_download-app-img {
-    height: 30px;
+    height: 20px;
     margin-left: 12px;
 }
 
 .footer_end {
     background-color: rgb(245, 245, 245);
     padding: 40px 0;
+    
 }
 
 .footer__notice {
@@ -323,10 +339,17 @@ html {
 }
 
 .footer__notice-link {
+    position: relative;
     font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
-    color: var(--text-color);
+    color: rgba(0,0,0,.54);
+    padding: 0 25px;
+    border-right: 1px solid rgba(0,0,0,.09)
+}
+
+.footer__notice-link:last-child {
+    border: none;
 }
 
 .footer__tick {
@@ -338,11 +361,11 @@ html {
 }
 
 .footer__company-info {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:rgb(102, 102, 102)
+    color:rgba(0,0,0,.65)
 }
 
 .footer-info-name {
