@@ -22,9 +22,10 @@
 }
 
 .header__navbar-user {
-    display: flex;
+    /* display: flex; */
     justify-items: center;
     position: relative;
+    display: none !important;
 }
 
 .header__navbar-user-avatar {
@@ -345,6 +346,10 @@
 }
 
 /* Authen modal */
+.modal {
+    display: none;
+}
+
 .auth-form {
     width: 500px;
     background-color: var(--white-color);
@@ -452,7 +457,7 @@
 }
 
 .auth-form__socials-title {
-    margin: 0 36px;
+    margin: 0 24px;
 }
 
 .auth-form__help {
@@ -475,6 +480,14 @@
     height: 16px;
     margin: 0 16px 2px;
     border-left: 1px solid #eaeaea ;
+}
+
+#register-form {
+    display: none;
+}
+
+#login-form {
+    display: none;
 }
 
 /* Header with search */
@@ -1214,7 +1227,3 @@
 .home-pagination {
     margin: 48px 0 32px;
 }
-
-
-/* Footer */
-

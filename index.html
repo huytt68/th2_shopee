@@ -85,19 +85,23 @@
                                 </div>
                             </div>
                         </li>
+
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
                                 <i class=" header__navbar-icon fa-solid fa-question"></i>
                                 Trợ giúp
                             </a>
                         </li>
+
                         <li class="header__navbar-item">
                             <i class=" header__navbar-icon fa-solid fa-globe"></i>
                             Ngôn ngữ
                             <i class=" header__navbar-icon fa-solid fa-angle-down"></i>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separator">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+
+                        <li id="register-button" class="header__navbar-item header__navbar-item--strong header__navbar-item--separator">Đăng ký</li>
+                        <li id="login-button" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        
                         <li class="header__navbar-item header__navbar-user">
                             <img src="https://i.pinimg.com/564x/cc/16/0c/cc160c19dbd165c43046c176223f10fe.jpg" alt="" class="header__navbar-user-avatar">
                             <span class="header__navbar-user-name">Huy Trọng Trần</span>
@@ -863,18 +867,18 @@
             </div>
         </footer>
 
-        <!-- <div class="modal">
+        <div id="modal" class="modal">
             <div class="modal__overlay"></div>
-            <div class="modal__body"> -->
+            <div class="modal__body">
             
                 <!-- Register Form -->
-                <!-- <div class="auth-form">
+                <div class="auth-form" id="register-form">
                     <div class="auth-form__container">
 
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng ký</h3>
-                            <span class="auth-form__switch-btn">Đăng nhập</span>
-                        </div>
+                            <span id="switch-login" class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>  
 
                         <div class="auth-form__form">
                             <div class="auth-form__group">
@@ -897,7 +901,7 @@
                         </div>
 
                         <div class="auth-form__control">
-                            <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
+                            <button id="close-register-modal" class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
                             <button class="btn btn--primary">ĐĂNG KÝ</button>
                         </div>
                     </div>
@@ -916,15 +920,15 @@
                             </span>
                         </a>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- Login Form -->
-                <!-- <div class="auth-form">
+                <div class="auth-form" id="login-form">
                     <div class="auth-form__container">
 
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng nhập</h3>
-                            <span class="auth-form__switch-btn">Đăng ký</span>
+                            <span id="switch-register" class="auth-form__switch-btn">Đăng ký</span>
                         </div>
 
                         <div class="auth-form__form">
@@ -945,7 +949,7 @@
                         </div>
 
                         <div class="auth-form__control">
-                            <button class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
+                            <button id="close-login-modal" class="btn btn-normal auth-form__control-back">TRỞ LẠI</button>
                             <button class="btn btn--primary">ĐĂNG NHẬP</button>
                         </div>
                     </div>
@@ -964,9 +968,11 @@
                             </span>
                         </a>
                     </div>
-                </div> -->
+                </div>
 
-            <!-- </div>
-        </div> -->
+            </div>
+        </div>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </html>
